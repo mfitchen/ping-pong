@@ -23,6 +23,8 @@ $(document).ready(function() {
   $("form#ping-pong-form").submit(function(event) {
     event.preventDefault();
 
+    $("ul.list-ping-pong li").remove();
+
     var inputNumber = parseInt($("input#ping-pong-number").val());
     var pongResults = pingPongList(inputNumber);
 
