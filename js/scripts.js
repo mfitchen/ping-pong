@@ -4,8 +4,10 @@ var pingPongList = function(inputNumber) {
   var pingPongArray = [];
 
   for(var index = 1; index <= inputNumber; index += 1) {
-    if (index % 5 === 0) {
-      pingPongArray.push("pong")
+    if (index % 15 === 0) {
+      pingPongArray.push("pingpong");
+    } else if (index % 5 === 0) {
+      pingPongArray.push("pong");
     } else if (index % 3 === 0) {
       pingPongArray.push("ping");
     } else {
