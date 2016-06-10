@@ -9,30 +9,35 @@
   </head>
   <body>
     <div class="container">
+      <!-- ======= Jumbotron ====== -->
       <div class="jumbotron">
         <h1>Ping Pong</h1>
         <h5><strong>MF</strong> SOLO PROJECT | Epicodus Week 3: <em>Arrays and Looping</em></h5>
       </div>
-
-      <p><strong>RULES:</strong><br>Ping Pong will count up to your inputted number starting from 1 with the following exceptions:</p>
-      <ul>
-        <li>Numbers divisible by 3 become "ping"</li>
-        <li>Numbers divisible by 5 become "pong"</li>
-        <li>Numbers divisible by 15 become "pingpong"</li>
-      </ul>
-
-      <form id="ping-pong-form">
-        <div class="form-group">
-          <label for="ping-pong-number">Enter your number here to play numeric table tennis:</label>
-          <input id="ping-pong-number" required type="number">
+      <!-- ======= Ping Pong Game ====== -->
+      <div class="row">
+        <div class="col-md-8">
+          <form id="ping-pong-form">
+            <div class="form-group">
+              <label for="ping-pong-number">Enter your number here to play numeric table tennis:</label>
+              <input id="ping-pong-number" required type="number">
+            </div>
+            <button type="submit" class="btn btn-success">PING & PONG!</button>
+          </form>
+          <div id="output-ping-pong">
+            <ul class="list-ping-pong">
+            </ul>
+          </div>
         </div>
-
-        <button type="submit" class="btn btn-success">PING & PONG!</button>
-      </form>
-
-      <div id="output-ping-pong">
-        <ul class="list-ping-pong">
-        </ul>
+        <div class="col-md-4">
+          <img src="img/ping-pong-1.png" alt="Ping Pong Dangle" class="img-responsive sidebar-rules">
+          <p>&nbsp;<br><strong>RULES:</strong><br>Ping Pong will count up to your inputted number starting from 1 with the following exceptions:</p>
+          <ul>
+            <li>Numbers divisible by 3 become "ping"</li>
+            <li>Numbers divisible by 5 become "pong"</li>
+            <li>Numbers divisible by 15 become "pingpong"<br>&nbsp;<br></li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>

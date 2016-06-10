@@ -12,7 +12,17 @@ html, body {
   margin-bottom: 20px;
 }
 
+.col-md-4 {
+  background-color: green;
+  color: white;
+}
+
+.sidebar-rules {
+  margin-top: 20px;
+}
+
 .jumbotron {
+  opacity: .7;
   margin-top: 20px;
   background-image: url(../img/pingpong.gif);
   background-size: cover;
