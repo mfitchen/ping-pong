@@ -4,8 +4,13 @@ var pingPongList = function(inputNumber) {
   var pingPongArray = [];
 
   for(var index = 1; index <= inputNumber; index += 1) {
-    pingPongArray.push(index);
+    if (index % 3 === 0) {
+      pingPongArray.push("ping")
+    } else {
+      pingPongArray.push(index);
+    }
   }
+
   return pingPongArray;
 };
 
